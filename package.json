@@ -1,0 +1,16 @@
+{
+  "name": "vue_webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zeng269/vue_webpack.git",
+  "author": "曾锐 <1119209110@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cz-conventional-changelog-zh": "^0.0.2"
+  },
+  "config": {
+    "commitizen": {
+       "path": "./node_modules/cz-conventional-changelog-zh"
+    }
+  }
+}
