@@ -5,8 +5,18 @@
   "repository": "https://github.com/zeng269/vue_webpack.git",
   "author": "曾锐 <1119209110@qq.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
   "dependencies": {
+    "vue": "^3.2.37",
     "cz-conventional-changelog-zh": "^0.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.1",
+    "vite": "^3.0.4"
   },
   "config": {
     "commitizen": {
