@@ -9,7 +9,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/[name].js'
+        filename: 'js/[name].js',
+        clean: true,
     },
     module: {
         rules:[
@@ -49,7 +50,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin(),
         new VueLoaderPlugin(),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './index.html'),
+            filename: 'index.html',
+        }),
     ],
 }
