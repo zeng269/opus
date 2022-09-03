@@ -9,7 +9,7 @@ module.exports = {
     },
     output: {
         path: undefined,
-        filename: 'js/[name].js'
+        filename: 'static/js/[hash][name].js'
     },
     module: {
         rules:[
@@ -37,7 +37,10 @@ module.exports = {
                     dataUrlCondition: {
                       maxSize: 10 * 1024 // 10kb
                     }
-                  }
+                },
+                generator: {
+                    filename: 'static/assets/images/[hash][ext][query]'
+                }
             },
             // vue
             {

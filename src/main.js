@@ -1,7 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import './assets/main.css'
-console.log('ssssss')
+import './assets/css/main.css'
+import sss from './assets/images/lll.jpeg'
+
+sss
 
 createApp(App).mount('#app')
